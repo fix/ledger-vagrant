@@ -11,12 +11,13 @@
 This will take a few minutes to install
 
 ## Compile your ledger app
-- Connect to the machine `vagrant ssh`
-- inside the machine install your app for instance:
+- install your app under `apps/` for instance:
 ```
+cd apps/
 git clone https://github.com/LedgerHQ/blue-app-xrp
 cd blue-app-xrp
 ```
+- Connect to the machine `vagrant ssh`
 - build your app
 ```
 make clean
@@ -27,3 +28,5 @@ make
 ```make load```
 - remove the app from the ledger
 ```make delete```
+
+Whenever you change source file: make clean -> make -> make delete -> make load
