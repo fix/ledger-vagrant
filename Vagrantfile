@@ -3,6 +3,8 @@ Vagrant.configure("2") do |config|
 	# Specify the base box
 	config.vm.box = "ubuntu/trusty64"
 
+  config.vm.synced_folder "apps/", "/home/vagrant/apps"
+
   # VM specific configs
   config.vm.provider "virtualbox" do |v|
   	v.name = "Ledger development box"
