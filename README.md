@@ -15,11 +15,11 @@ This will take a few minutes to install
 ```
 cd apps/
 git clone https://github.com/LedgerHQ/blue-app-xrp
-cd blue-app-xrp
 ```
 - Connect to the machine `vagrant ssh`
 - build your app
 ```
+cd apps/blue-app-xrp
 make clean
 make
 ```
