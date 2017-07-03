@@ -24,9 +24,8 @@ make clean
 make
 ```
 - connect your ledger Nano S to your computer
-- install the app on your ledger
-```make load```
-- remove the app from the ledger
-```make delete```
+- install the app on your ledger: `make load`
+- remove the app from the ledger: `make delete`
 
-Whenever you change source file: make clean -> make -> make delete -> make load
+## Known issues
+- USB port is locked out of the host machine, making tests rather tedious (needs to tear down `vagrant halt`) to test ledger on host machine
