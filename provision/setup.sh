@@ -40,3 +40,6 @@ echo "" >> /home/vagrant/.bashrc
 echo "# Custom variables for Ledger Development" >> /home/vagrant/.bashrc
 echo "export BOLOS_ENV=/opt/bolos" >> /home/vagrant/.bashrc
 echo "export BOLOS_SDK=/opt/bolos/nanos-secure-sdk" >> /home/vagrant/.bashrc
+echo "export ARM_HOME=/opt/bolos/gcc-arm-none-eabi-5_3-2016q1" >> /home/vagrant/.bashrc
+echo "" >> /home/vagrant/.bashrc
+echo "export PATH=\$PATH:\$ARM_HOME/bin" >> /home/vagrant/.bashrc
