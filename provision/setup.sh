@@ -32,7 +32,7 @@ git checkout tags/nanos-1314
 cd /opt/bolos/
 
 echo "finetuning rights for usb access"
-wget -q -O - https://www.ledgerwallet.com/support/add_udev_rules.sh | bash
+wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | bash
 usermod -a -G plugdev vagrant
 
 echo "Setting up bash profile"
