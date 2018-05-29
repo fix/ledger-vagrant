@@ -29,3 +29,9 @@ make
 
 ## Known issues
 - USB port is locked out of the host machine, making tests rather tedious (needs to tear down `vagrant halt`) to test ledger on host machine
+- on Ubuntu, if the dongle is not found in the vagrant box, be sure that your **host** user belongs to the vboxusers group `sudo usermod -aG vboxusers <username>` (see https://askubuntu.com/questions/25596/how-to-set-up-usb-for-virtualbox/25600#25600)
+- if you have some issue involving wrong TARGET_ID, please either upgrade your nano S firmware to 1.4.x, either downgrade nano s secure sdk tag to nano-1314:
+```
+cd /opt/bolos/nanos-secure-sdk
+sudo git checkout tags/nanos-1314
+```
