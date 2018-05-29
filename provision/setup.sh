@@ -28,7 +28,7 @@ echo "cloning sdk for nano s"
 cd /opt/bolos/
 git clone https://github.com/LedgerHQ/nanos-secure-sdk.git
 cd nanos-secure-sdk/
-git checkout tags/nanos-1314
+git checkout tags/nanos-1421
 cd /opt/bolos/
 
 echo "finetuning rights for usb access"
